@@ -49,7 +49,7 @@ class App extends Component {
               Netlify</a>{"  |  "}
             Code on{" "}
             <a
-              href="https://github.com/ReactingTesting/reacting-testing"
+              href="https://github.com/MatildaD/react-test"
               target="_blank"
               rel="noopener noreferrer"
             >
