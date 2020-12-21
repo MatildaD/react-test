@@ -1,0 +1,110 @@
+.menu-container {
+    display: flex;
+    min-height: 50px;
+    background-color: rgba(247, 198, 106);
+    box-shadow: 0rem 0.5rem 1.2rem rgba(22, 22, 22, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    top: 0;left:0;right:0;
+}
+
+.rc-menu-horizontal > .rc-menu-item, .rc-menu-horizontal > .rc-menu-submenu > .rc-menu-submenu-title{
+    padding: 10px 20px;
+}
+
+.mymenu.mainmenu {
+    position: absolute;
+    top: 0;
+    align-self: center;
+    background-color: rgba(247, 198, 106);
+    margin: 0;
+    padding: 0;
+    transform: translate3d(0, 0, 0);
+    transition: transform 300ms ease-in-out;
+    border: none;
+
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-size: 1.2rem;
+}
+
+.mymenu.mainmenu:hover {
+    background-color: rgba(247, 198, 106);
+    color: black;
+    border: none;
+    
+}
+
+.mymenu-mobile.mainmenu {
+    width: 100%;
+    transform: translate3d(0, -150%, 0);
+    transition: transform 300ms ease-in-out;
+    padding-top: 32px;
+    box-shadow: 0rem 0.5rem 1.2rem rgba(22, 22, 22, 0.5);
+}
+
+.mymenu-mobile.mainmenu.isopen {
+    transform: translate3d(0, 0, 0);
+}
+
+.mysubmenu.mainmenu {
+    background-color: rgba(247, 198, 106);
+    color: black;
+    border-bottom: none;
+    padding: 0;
+
+}
+
+.mymenuitem.mainmenu {
+    background-color: rgba(247, 198, 106, 0.815);
+    color: black;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    padding: 0;
+    border-bottom: 2px solid transparent;
+    
+}
+
+.mysubmenu.mainmenu:hover {
+    background-color: rgba(247, 198, 106);
+    border-bottom: 2px solid inherit;
+    cursor: pointer;
+}
+
+.mymenuitem.mainmenu:hover {
+    background-color: #eaf8fe;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+
+
+.menu-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+  }
+
+.menu-link.selected {
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .rc-menu-sub.rc-menu-inline > .rc-menu-item, .rc-menu-sub.rc-menu-inline > .rc-menu-submenu > .rc-menu-submenu-title {
+        padding: 0 0 0 0;
+    }
+    .menu-container {
+        min-height: 38px;
+    }
+
+    .menu-link {
+        padding: 10px 0px;
+      }
+} 

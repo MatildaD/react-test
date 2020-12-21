@@ -1,0 +1,218 @@
+
+.randomizer-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 95vw;
+    align-items: center;
+    
+}
+
+.randomizer-all-seasons {
+    display: flex;
+    max-width: 95vw;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.randomizer-season {
+    list-style-type: none;
+    padding: 0rem;
+    margin: 0;
+
+    -moz-column-count: 2;
+    -moz-column-gap: .8rem;
+    -webkit-column-count: 2;
+    -webkit-column-gap: .8rem;
+    column-count: 2;
+    column-gap: .8rem;
+
+}
+
+.randomizer-season-container {
+    margin: 1rem 1rem;
+    max-width: 95vw;
+    width: 15rem;
+    position: relative; 
+
+}
+.randomizer-season-header {
+    display: flex;
+    margin-bottom: .4rem;
+}
+
+.randomizer-season-title {
+    margin-bottom: 0.1rem;
+    font-size: 1.3rem;
+    flex-grow: 1;
+}
+
+.randomizer-toggle-button {
+    margin: .1rem 0;
+    background-color: #F7C66A; 
+    /* #ffdb98; */
+    min-width: 1rem;
+    box-shadow: 0 0  .2rem rgba(22, 22, 22, .5);
+    border: none;
+    cursor: pointer;
+    font-size: .9rem;
+    height: 1.5rem;
+
+}
+
+
+.randomizer-episode{
+    display: flex;
+    margin-bottom: .4rem;
+    background-color: #ffd68a;
+    min-width: 1rem;
+    max-width: 10rem;
+    box-shadow: .1rem .1rem .2rem rgba(99, 83, 83, 0.5);
+    cursor: pointer;
+}
+
+.randomizer-button {
+    margin: .1rem 0;
+    background-color: #F7C66A ;
+    /* rgb(241, 208, 145); */
+    min-width: 1rem;
+    box-shadow: .1rem .1rem .2rem rgba(22, 22, 22, .5);
+    border: none;
+    cursor: pointer;
+    font-size: .9rem;
+    height: 1.5rem;
+    width: 100%;
+    margin-bottom: .5rem;
+    max-width: 95vw;
+    width: 15rem;
+}
+
+.randomizer-selector {
+    font-size: 1rem;
+}
+
+.randomizer-button-title{
+    font-size: inherit;
+    margin-left: 1.5rem;
+}
+
+.episode-checkbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    background: none;
+    color: inherit;
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.randomizer-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 5.5rem;
+    margin-bottom: 1rem;
+    padding: .4rem;
+    /* box-shadow: .0rem .0rem .6rem rgba(22, 22, 22, .5); */
+    border-radius: 0.5rem;
+    background-color: wheat;
+    max-width: 95vw;
+    width: 30rem;
+    padding-bottom: .7rem;
+}
+
+.randomizer-result-text {
+    text-align: center;
+    font-size: 3.3rem;
+}
+
+.christmas-special {
+    max-width: 98vw;
+    -webkit-column-span: all;
+    column-span: all;
+    font-size: 1rem;
+}
+
+.christmas-special-title,.no-episode-selected {
+    font-size: 2.5rem;
+    
+}
+
+.randomize-button{
+    height: 2.5rem;
+    font-size: 1.3rem;  
+}
+
+.randomizer-title {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    
+}
+
+.randomizer-info{
+    max-width: 92vw;
+    width: 40rem;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}
+
+.unchecked{
+    background-color: wheat;
+}
+
+@supports not (column-span: all) {
+    .christmas-special {
+     position: absolute;
+     top:2.2rem;right:0;left:0;
+    } 
+    .randomizer-season.contains-christmas-special
+    {
+        margin-top: 2.3rem;
+    }
+  }
+
+@media screen and (min-width: 1200px) {
+.randomizer-selector-container {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+
+}
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .randomizer-button {
+        width: 90vw;
+    }
+
+    .randomizer-season-title {
+        margin-bottom: 0.1rem;
+        font-size: 1.3rem;
+    }
+    .randomizer-result {
+        width: 90vw;
+        min-height: 5.5rem;
+    }
+
+    .christmas-special-title,.no-episode-selected {
+        font-size: 1.48rem;
+        margin-bottom: 0;
+        
+    }
+    .randomizer-season-container {
+        width: 90vw;
+        margin: 1rem 0;
+    }
+    .randomizer-episode{
+        max-width: 90vw;
+    }
+
+    .randomizer-all-seasons {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+} 

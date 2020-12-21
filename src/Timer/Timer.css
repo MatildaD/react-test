@@ -1,0 +1,74 @@
+.timer-title {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+
+
+.day-slot {
+    display: flex;
+    border-radius: 0.5rem;
+    width: 70vmin;
+    height: 70vmin;
+    max-width: 20rem;
+    max-height: 20rem;
+    margin: calc(.5rem + 2vmin);
+    justify-content: center;
+    align-items: center;
+    font-size: calc(4rem + 7vmin);
+    background-color: #F7C66A;
+    box-shadow: 0.5rem 0.5rem 1.2rem rgba(22, 22, 22, 0.5);
+}
+
+.day-slot-text {
+    font-size: calc(20px + 2vmin);
+    text-align: center;
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-slots-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95vw;
+}
+
+
+.timer-slot {
+    display: flex;
+    border-radius: 0.5rem;
+    width: 22vmin;
+    height: 22vmin;
+    max-width: 7rem;
+    max-height: 7rem;
+    margin: calc(.5rem + 2vmin);
+    justify-content: center;
+    align-items: center;
+    font-size: calc(20px + 4vmin);
+    background-color: #F7C66A;
+    box-shadow: 0.5rem 0.5rem 1.2rem rgba(22, 22, 22, 0.5);
+}
+
+.timer-slot-text{
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+
+}
+
+.timer-title {
+    text-align: center;
+    max-width: 90vw;
+}
+
+.timer-note {
+    margin-top: 4rem;
+    text-align: center;
+    max-width: 95vw;
+}
+
