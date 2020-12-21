@@ -8,7 +8,6 @@ import "./RcMenu.css";
 
 export default function RcMenu({ toggleMenu, menuIsExpanded }) {
   const isDesktop = useMedia(["(min-width: 600px)"], [true], false);
-  const expandIcon = isDesktop ? "▿" : "";
 
   return (
     <div className="menu-container">
